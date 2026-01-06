@@ -18,12 +18,12 @@ class Task:
 
 def main():
     if len(sys.argv) < 3:
-        print("Uso: python tasker.py <comando> <texto>")
+        print("Uso: python tasker.py <cmd> <txt>")
         
         return
     
-    cmd = sys.argv
-    txt = sys.argv
+    cmd = sys.argv[1]
+    txt = sys.argv[2]
     
     task = Task()
     task.execute_comand(cmd,txt)
